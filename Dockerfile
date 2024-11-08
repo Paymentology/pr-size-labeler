@@ -1,4 +1,4 @@
-ARG IMAGE_CACHE_PREFIX=paymentology.jfrog.io/pt-docker-virtual-thirdparty/
+ARG IMAGE_CACHE_PREFIX=kuik.kuik-system.logical-stud.pt-shared-prod.paymentology.int/
 ARG ALPINE_VERSION=3.15
 FROM ${IMAGE_CACHE_PREFIX}docker.io/alpine:${ALPINE_VERSION}
 
