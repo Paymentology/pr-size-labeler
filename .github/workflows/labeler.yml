@@ -4,7 +4,9 @@ on: [pull_request]
 
 jobs:
   labeler:
-    runs-on: ubuntu-latest
+    runs-on: pt-shared-prod
+    if: github.event.pull_request.draft == false
+    timeout-minutes: 1
     name: Label the PR size
     steps:
       - uses: actions/checkout@v3
